@@ -1,0 +1,27 @@
+body {
+  font-family: "Gill Sans", sans-serif;
+  color: white;
+  background-color: black;
+}
+div {
+  color: #c8c5c0;
+  background-color: #1c1b1b;
+  padding: 5px;
+}
+
+.display-item {
+  background-color: #63480d;
+  border-radius: 15px;
+  margin: 15px 0px;
+}
+
+.display {
+  background-color: #8f7847;
+  margin: 0px 180px;
+}
+
+h1 {
+  color: bisque;
+  font-size: 50px;
+  font-family: "Gill Sans", sans-serif;
+}

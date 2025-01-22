@@ -1,27 +1,59 @@
 body {
-  font-family: "Gill Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: calibri, "Trebuchet MS", sans-serif;
   color: white;
-  background-color: black;
+  background-color: rgb(121, 108, 108);
 }
+
+h1 {
+  padding: 0;
+  margin: 0;
+  color: rgb(194, 194, 194);
+  background-color: rgb(146, 145, 126);
+  height: 100px;
+  font-weight: normal;
+  font-size: 50px;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+}
+
+a {
+  color: rgb(237, 198, 198);
+}
+
 div {
-  color: #c8c5c0;
-  background-color: #1c1b1b;
+  color: rgb(121, 108, 108);
+  background-color: rgb(121, 108, 108);
   padding: 5px;
 }
 
+nav {
+  background-color: rgb(146, 145, 126);
+}
+
+.display-container {
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  background-color: rgb(82, 74, 74);
+  margin: 0px 180px;
+}
+
 .display-item {
-  background-color: #63480d;
+  display: flex;
+  background-color: #4b4133;
+  justify-content: center;
   border-radius: 15px;
   margin: 15px 0px;
 }
 
-.display {
-  background-color: #8f7847;
-  margin: 0px 180px;
-}
-
-h1 {
-  color: bisque;
-  font-size: 50px;
-  font-family: "Gill Sans", sans-serif;
+.image {
+  background-color: blue;
+  background-image: url("Assets/toy_workshop_screenshot.png");
+  background-size: auto;
+  border-radius: 15px;
+  height: 500px;
+  width: 600px;
+  margin: 20px;
 }

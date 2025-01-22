@@ -7,16 +7,19 @@ array = [
   ["x", "y", "z"],
 ];
 
-function create_permutations(array) {
+function create_combinations(array, prefix = "") {
   /*
-  ["a1x, a1y, a1z, a2x, a2y, a2y"]
+  ["a1x, a1y, a1z, a2x, a2y, a2z"]
   */
-  console.log(array);
-  if (array.length == 1) {
-    return 1;
+  if (array.length < 1) {
+    return [prefix];
   }
-  return create_permutations(array.slice(1)];
-}
 
-console.log(create_permutations(array));
+  let combinations = [];
+  for (let i of array[0]) {
+    combinations.push(create_combinations(array.slice(1), prefix + i));
+  }
+  return combinations;
+}
+console.log(create_combinations(array));
 console.log("done");

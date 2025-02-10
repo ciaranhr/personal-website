@@ -2,8 +2,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: calibri, "Trebuchet MS", sans-serif;
-  color: white;
-  background-color: rgb(233, 233, 233);
+  color: rgb(143, 111, 72);
+  background-color: rgb(143, 111, 72);
 }
 
 img {
@@ -14,7 +14,7 @@ img {
 }
 
 a {
-  color: rgb(179, 69, 69);
+  color: rgb(186, 175, 175);
 }
 
 div {
@@ -23,15 +23,15 @@ div {
   padding: 0px;
   margin: 0px;
 }
-/* nav bar */
 
+/* nav bar */
 nav {
   margin: 0;
   padding: 0 8em;
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: rgb(36, 33, 33);
+  background-color: rgb(107, 158, 158);
 }
 
 h1 {
@@ -42,7 +42,7 @@ h1 {
   font-family: Helvetica, sans-serif;
 }
 
-ul {
+ul[class="horizontal"] {
   font-size: 30px;
   display: flex;
   list-style: none;
@@ -53,14 +53,11 @@ li {
 }
 
 /*scrolling display of work*/
-
 .display {
-  box-sizing: border-box;
   display: flex;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-
   background-color: rgb(143, 111, 72);
   margin: 0px 180px;
 }
@@ -70,6 +67,14 @@ li {
   align-items: center;
   border-radius: 5px;
   margin: 15px 0px;
+  border: solid;
+  border-color: rgb(82, 74, 74);
+}
+
+.item:hover {
+  border: solid;
+  cursor: pointer;
+  border-color: blue;
 }
 
 .container {
@@ -89,7 +94,7 @@ li {
 .image {
   background-color: rgb(57, 59, 58);
   border-radius: 5px;
-  height: 500px;
-  width: 600px;
+  height: 300px;
+  width: 400px;
   margin: 20px;
 }
